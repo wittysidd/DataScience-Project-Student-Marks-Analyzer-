@@ -1,0 +1,105 @@
+/* style.css */
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #2a5fa0;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+th {
+  background-color: #b5b5b5;
+  color: #0d0c0c;
+  font-size: 25px;
+  text-align: left;
+  border: 1px solid #797979;
+  padding: 8px;
+}
+
+td {
+  border: 1px solid #edf3ec; /* Add border */
+  color:#115614;
+  padding: 8px; /* Add padding */
+  text-align: center; /* Center text */
+  font-size: 15px;
+}
+
+p {
+  font-size: 22px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+button {
+  display: block;
+  margin: auto;
+}
+
+
+.edit-green {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.edit-green:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+.edit-dkgreen {
+  background-color: #1c9820; /* Green background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.edit-dkgreen:hover {
+  background-color: #1f5b21; /* Darker green on hover */
+}
+
+.edit-blue {
+  background-color: #1b77c7; /* Green background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.edit-blue:hover {
+  background-color: #1f407e; /* Darker green on hover */
+}
+
+.edit-red {
+  background-color: #c44f4f; /* Green background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.edit-red:hover {
+  background-color: #ab1515; /* Darker green on hover */
+}
+
+.centered-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

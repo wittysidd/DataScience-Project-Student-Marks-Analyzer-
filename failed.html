@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+	<title>Failed Students List</title>
+	<style>
+		.center {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+	</style>
+</head>
+<body>
+	<div class="center">
+		<h2>List of Failed Students:</h2>
+		<ul>
+			{% for student in failed_students %}
+				<li>{{ student }}</li>
+			{% endfor %}
+		</ul>
+		<form action="/" method="get">
+			<button type="submit">Go Back</button>
+		</form>
+	</div>
+</body>
+</html>

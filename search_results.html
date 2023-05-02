@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Search results</title>
+</head>
+<body>
+    {% if results.empty %}
+        <p>No results found for {{ request.form['name'] }}.</p>
+    {% else %}
+        <h2>Search results for {{ request.form['name'] }}:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>&nbsp Name</th>
+                    <th>&nbsp&nbspAge</th>
+                    <th>&nbsp&nbsp Year</th>
+                    <th>&nbsp&nbsp Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for index, row in results.iterrows() %}
+                    <tr>
+                        <td>&nbsp{{ row['Name'] }}</td>
+                        <td>&nbsp&nbsp&nbsp{{ row['Age'] }}</td>
+                        <td>&nbsp&nbsp{{ row['Year'] }}</td>
+                        <td>&nbsp&nbsp {{ row['Marks'] }}</td>
+                    </tr>
+                {% endfor %}
+                <a href="{{ url_for('index') }}">Search again</a>
+            </tbody>
+        </table>
+    {% endif %}
+</body>
+</html>

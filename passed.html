@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Passed Students List</title>
+	<style>
+		.center {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+	</style>
+</head>
+<body>
+	<div class="center">
+		<h2 color = "blue">List of Passed Students:</h2>
+		<ul>
+			{% for student in passed_students %}
+				<li>{{ student }}</li>
+			{% endfor %}
+		</ul>
+		<form action="/" method="get">
+			<button type="submit">Go Back</button>
+		</form>
+	</div>
+</body>
+</html>

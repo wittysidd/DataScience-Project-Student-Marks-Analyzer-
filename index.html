@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">  
+    <title>Search for a student</title>
+</head>
+<body>
+    <h1>Search for a Student</h1>
+    <form method="POST" action="{{ url_for('search') }}">
+        <div class="centered-input">
+            <label for="name">Enter student name:</label>
+            <input type="text" id="name" name="name">
+            <input type="submit" value="Search">
+        </div>
+    </form>
+    
+    <h1>Topper of the class </h1>
+    <form method="GET" action="{{ url_for('view_topper') }}">
+        <button class = "edit-dkgreen" type="submit">View Topper</button>
+    </form>
+
+    <h1>Average of whole class</h1>
+    <form method="GET" action="{{ url_for('average') }}">
+        <button class = "edit-green" type="submit">Average</button>
+    </form>
+
+    <h1>List of Passed Students</h1>
+    <form method="GET" action="{{ url_for('passed') }}">
+        <button class = "edit-blue" type="submit">Passed</button>
+    </form>
+
+    <h1>List of Failed Students</h1>
+    <form method="GET" action="{{ url_for('failed') }}">
+        <button class = "edit-red" type="submit">Failed</button>
+    </form>
+
+    <h1>Other Statistics</h1>
+    <form method="GET" action="{{ url_for('OtherData') }}">
+        <button class = "edit-blue" type="submit">Stats</button>
+    </form>
+
+
+</body>
+</html>
